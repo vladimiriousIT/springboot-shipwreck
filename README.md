@@ -227,7 +227,7 @@ spring.h2.console.enabled=true
 spring.h2.console.path=/h2
 ```
 
-Then retart app and access h2 at [http://localhost:8080/h2](http://localhost:8080/h2)
+Then retart app and access h2 at [http://localhost:8081/h2](http://localhost:8081/h2)
 
 ### DataSource configuration
 
@@ -290,7 +290,7 @@ Any configuration java class that has public methods with the `@Bean` annotation
 
 ### Demo: Defining Multiple Datasources
 
-It's good practice to organize all config classes under the same package. Can be named anything, but good practice to include "Configuration" in name so its clear that its not a core application class. [Example](demo/src/main/java/com/boot/config/PersistenceConfiguration.java).
+It's good practice to organize all config classes under the same package. Can be named anything, but good practice to include "Configuration" in name so its clear that its not a core application class. [Example](https://github.com/vladimiriousIT/springboot-shipwreck/blob/master/src/main/java/com/boot/config/PersistenceConfiguration.java).
 
 Given this example:
 
@@ -311,9 +311,9 @@ public class PersistenceConfiguration {
 
 ### Demo: Adding JPA and Spring Data JPA
 
-Convert model object to JPA entity by adding appropriate annotations. [Example](demo/src/main/java/com/boot/model/Shipwreck.java)
+Convert model object to JPA entity by adding appropriate annotations. [Example](https://github.com/vladimiriousIT/springboot-shipwreck/blob/master/src/main/java/com/boot/model/Shipwreck.java)
 
-Then need to crete repository for spring jpa tier. [Example](demo/src/main/java/com/boot/repository/ShipwreckRepository.java)
+Then need to crete repository for spring jpa tier. [Example](https://github.com/vladimiriousIT/springboot-shipwreck/blob/master/src/main/java/com/boot/repository/ShipwreckRepository.java)
 
 Then autowire the repository into the controller:
 
@@ -355,9 +355,7 @@ Then add test dependency:
 </dependency>
 ```
 
-[Simple unit test](demo/src/test/java/com/boot/controller/HomeControllerTest.java) with no dependencies.
-
-[Unit test with Mockito](demo/src/test/java/com/boot/controller/ShipwreckControllerTest.java).
+[Unit test with Mockito](https://github.com/vladimiriousIT/springboot-shipwreck/blob/master/src/test/java/com/boot/ShipwreckControllerTest.java).
 
 May prefer to use Hamcrest assertions rather than JUnit, more declarative and easier to read:
 
