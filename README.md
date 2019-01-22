@@ -385,7 +385,7 @@ To convert a JUnit test into an integration test:
 * Add `@RunWith(SpringJUnit4ClassRunner.class)` annotation to test class. This Spring-based test class runner is part of the Spring test tools that the test starter transitively included in the project.
 * Add `@SpringApplicationConfiguratinon` annotation to test class. This is a Spring Boot annotation and you supply your main class as the annotation parameter. This tells Spring Boot how to configure and start the application. This is like calling main void app, but embedded in the context of a unit test.
 
-[Example integration test](demo/src/test/java/com/boot/controller/ShipwreckControllerIntTest.java)
+[Example integration test](https://github.com/vladimiriousIT/springboot-shipwreck/blob/master/src/test/java/com/boot/ShipwreckControllerWebIntegrationTest.java)
 
 ### Demo: Web Integration Testing
 
